@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-image: url("https://img.huffingtonpost.com/asset/5d70682724000032007549cf.jpeg?ops=scalefit_630_noupscale");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  font-size: calc(10px + 2vmin);
+  color: whitesmoke;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#title{
+  width: max-content;
+}
+
+#titlebar{
+  background-color: whitesmoke;
+  min-width: 100vw;
+}
+
+#chatdiv{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  min-width : 70vw;
+  min-height: 70vh;
+}
+
+form { background: #000; padding-top: 3px;  width: 100%; }
+
+form input { border: 0; padding: 10px; width: 90%; margin-right: 0.5%; }
+
+form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+    
+#chatLog {margin : 0; padding : 0; flex:1; background-color: whitesmoke; color: black;}
+    
+#chatLog li { padding: 5px 10px; font-size: 15px; text-align: left;}
+    
+#chatLog li:nth-child(odd) { background: #eee; }
+
+#sendForm {
+  display : flex;
+  flex-direction: row;
+}
+
+#findBtn{
+  margin-top : 1px;
+  padding : 2px ;
+  font-size : 1.5rem;
+}
